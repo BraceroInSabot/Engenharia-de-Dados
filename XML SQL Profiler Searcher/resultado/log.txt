@@ -1,0 +1,940 @@
+
+=======================  INICIO Query [0]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [0]  =======================
+
+
+=======================  INICIO Query [1]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [1]  =======================
+
+
+=======================  INICIO Query [2]  =======================
+
+declare @p1 int
+
+set @p1=1
+
+exec sp_prepexec @p1 output,N'@P1 int,@P2 nvarchar(12)',N'SELECT TOP 1 @P1 AS [a] FROM [Usuario] WHERE [Usuario].[usuario] = @P2',1,N'bracer'
+
+select @p1
+
+=======================  FIM Query [2]  =======================
+
+
+=======================  INICIO Query [3]  =======================
+
+declare @p1 int
+
+set @p1=1
+
+exec sp_prepexec @p1 output,N'@P1 int,@P2 nvarchar(12)',N'SELECT TOP 1 @P1 AS [a] FROM [Usuario] WHERE [Usuario].[usuario] = @P2',1,N'bracer'
+
+select @p1
+
+=======================  FIM Query [3]  =======================
+
+
+=======================  INICIO Query [4]  =======================
+
+declare @p1 int
+
+set @p1=2
+
+exec sp_prepexec @p1 output,N'@P1 int,@P2 nvarchar(12)',N'SELECT TOP 1 @P1 AS [a] FROM [Usuario] WHERE [Usuario].[usuario] = @P2',1,N'bracer'
+
+select @p1
+
+=======================  FIM Query [4]  =======================
+
+
+=======================  INICIO Query [5]  =======================
+
+declare @p1 int
+
+set @p1=2
+
+exec sp_prepexec @p1 output,N'@P1 int,@P2 nvarchar(12)',N'SELECT TOP 1 @P1 AS [a] FROM [Usuario] WHERE [Usuario].[usuario] = @P2',1,N'bracer'
+
+select @p1
+
+=======================  FIM Query [5]  =======================
+
+
+=======================  INICIO Query [6]  =======================
+
+exec sp_describe_undeclared_parameters N'SET NOCOUNT ON INSERT INTO [Usuario] ([password], [last_login], [is_superuser], [email], [is_staff], [is_active], [date_joined], [imagem], [usuario], [nome], [telefone], [is_motorista], [endereco_id]) VALUES (@P1, @P2, @P3, @P4, @P5, @P6, @P7, @P8, @P9, @P10, @P11, @P12, @P13); SELECT CAST(SCOPE_IDENTITY() AS bigint)'
+
+=======================  FIM Query [6]  =======================
+
+
+=======================  INICIO Query [7]  =======================
+
+declare @p1 int
+
+set @p1=3
+
+exec sp_prepexec @p1 output,N'@P1 nvarchar(176),@P2 datetimeoffset,@P3 int,@P4 nvarchar(38),@P5 int,@P6 int,@P7 datetime2,@P8 nvarchar(40),@P9 nvarchar(12),@P10 nvarchar(34),@P11 nvarchar(22),@P12 int,@P13 bigint',N'SET NOCOUNT ON INSERT INTO [Usuario] ([password], [last_login], [is_superuser], [email], [is_staff], [is_active], [date_joined], [imagem], [usuario], [nome], [telefone], [is_motorista], [endereco_id]) VALUES (@P1, @P2, @P3, @P4, @P5, @P6, @P7, @P8, @P9, @P10, @P11, @P12, @P13); SELECT CAST(SCOPE_IDENTITY() AS bigint)',N'pbkdf2_sha256$720000$8Fvb82smfucZpEMf2iXUVE$LLFjfwZlwkekI0sOTTHWA1XoY3CQwfLSkG7aTEUDZ4o=',NULL,0,N'guibragon@gmail.com',0,1,'2025-01-20 02:17:48.6136090',N'userDefault/user.png',N'bracer',N'Guilherme Bracero',N'17996731503',0,NULL
+
+select @p1
+
+=======================  FIM Query [7]  =======================
+
+
+=======================  INICIO Query [8]  =======================
+
+declare @p1 int
+
+set @p1=3
+
+exec sp_prepexec @p1 output,N'@P1 nvarchar(176),@P2 datetimeoffset,@P3 int,@P4 nvarchar(38),@P5 int,@P6 int,@P7 datetime2,@P8 nvarchar(40),@P9 nvarchar(12),@P10 nvarchar(34),@P11 nvarchar(22),@P12 int,@P13 bigint',N'SET NOCOUNT ON INSERT INTO [Usuario] ([password], [last_login], [is_superuser], [email], [is_staff], [is_active], [date_joined], [imagem], [usuario], [nome], [telefone], [is_motorista], [endereco_id]) VALUES (@P1, @P2, @P3, @P4, @P5, @P6, @P7, @P8, @P9, @P10, @P11, @P12, @P13); SELECT CAST(SCOPE_IDENTITY() AS bigint)',N'pbkdf2_sha256$720000$8Fvb82smfucZpEMf2iXUVE$LLFjfwZlwkekI0sOTTHWA1XoY3CQwfLSkG7aTEUDZ4o=',NULL,0,N'guibragon@gmail.com',0,1,'2025-01-20 02:17:48.6136090',N'userDefault/user.png',N'bracer',N'Guilherme Bracero',N'17996731503',0,NULL
+
+select @p1
+
+=======================  FIM Query [8]  =======================
+
+
+=======================  INICIO Query [9]  =======================
+
+declare @p1 int
+
+set @p1=4
+
+exec sp_prepexec @p1 output,N'@P1 nvarchar(12)',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[usuario] = @P1',N'bracer'
+
+select @p1
+
+=======================  FIM Query [9]  =======================
+
+
+=======================  INICIO Query [10]  =======================
+
+declare @p1 int
+
+set @p1=4
+
+exec sp_prepexec @p1 output,N'@P1 nvarchar(12)',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[usuario] = @P1',N'bracer'
+
+select @p1
+
+=======================  FIM Query [10]  =======================
+
+
+=======================  INICIO Query [11]  =======================
+
+declare @p1 int
+
+set @p1=5
+
+exec sp_prepexec @p1 output,N'@P1 int,@P2 nvarchar(64)',N'SELECT TOP 1 @P1 AS [a] FROM [django_session] WHERE [django_session].[session_key] = @P2',1,N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [11]  =======================
+
+
+=======================  INICIO Query [12]  =======================
+
+declare @p1 int
+
+set @p1=5
+
+exec sp_prepexec @p1 output,N'@P1 int,@P2 nvarchar(64)',N'SELECT TOP 1 @P1 AS [a] FROM [django_session] WHERE [django_session].[session_key] = @P2',1,N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [12]  =======================
+
+
+=======================  INICIO Query [13]  =======================
+
+declare @p1 int
+
+set @p1=6
+
+exec sp_prepexec @p1 output,N'@P1 nvarchar(64),@P2 nvarchar(108),@P3 datetime2',N'INSERT INTO [django_session] ([session_key], [session_data], [expire_date]) VALUES (@P1, @P2, @P3)',N'vb0r520h6ud39rsp06ri89wu9ge7609c',N'e30:1tZhML:zlUD2cBKk-pd7e3Gv5g2Dc44IdVhDPRejlhk8YYGiDk','2025-02-03 02:17:49.3438340'
+
+select @p1
+
+=======================  FIM Query [13]  =======================
+
+
+=======================  INICIO Query [14]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [14]  =======================
+
+
+=======================  INICIO Query [15]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [15]  =======================
+
+
+=======================  INICIO Query [16]  =======================
+
+declare @p1 int
+
+set @p1=7
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 int',N'SET NOCOUNT OFF; UPDATE [Usuario] SET [last_login] = @P1 WHERE [Usuario].[id] = @P2','2025-01-20 02:17:49.3448330',1002
+
+select @p1
+
+=======================  FIM Query [16]  =======================
+
+
+=======================  INICIO Query [17]  =======================
+
+declare @p1 int
+
+set @p1=8
+
+exec sp_prepexec @p1 output,N'@P1 nvarchar(456),@P2 datetime2,@P3 nvarchar(64)',N'SET NOCOUNT OFF; UPDATE [django_session] SET [session_data] = @P1, [expire_date] = @P2 WHERE [django_session].[session_key] = @P3',N'.eJxVjLEOwjAMRP8lM4rcOKkLI3u_oXJsixZQKzXthPh3iNQBppPuvbuXG3jfxmEvtg6TuotrAII7_daZ5WFzZXrn-bZ4WeZtnbKvij9o8f2i9rwe7t_ByGWs6yAsgc74jSiIrSJFjNCRkqAgEGGTEJIRcmtMQSF2mLXDaGbJvT9BOTf6:1tZhML:-_Spt96s7P0efx9svJfFLHb9GtC-vA7ey4vknwhvVVo','2025-02-03 02:17:49.3481910',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [17]  =======================
+
+
+=======================  INICIO Query [18]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [18]  =======================
+
+
+=======================  INICIO Query [19]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [19]  =======================
+
+
+=======================  INICIO Query [20]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [20]  =======================
+
+
+=======================  INICIO Query [21]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [21]  =======================
+
+
+=======================  INICIO Query [22]  =======================
+
+declare @p1 int
+
+set @p1=9
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 nvarchar(64)',N'SELECT TOP 21 [django_session].[session_key], [django_session].[session_data], [django_session].[expire_date] FROM [django_session] WHERE ([django_session].[expire_date] > @P1 AND [django_session].[session_key] = @P2)','2025-01-20 02:17:49.3521900',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [22]  =======================
+
+
+=======================  INICIO Query [23]  =======================
+
+declare @p1 int
+
+set @p1=9
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 nvarchar(64)',N'SELECT TOP 21 [django_session].[session_key], [django_session].[session_data], [django_session].[expire_date] FROM [django_session] WHERE ([django_session].[expire_date] > @P1 AND [django_session].[session_key] = @P2)','2025-01-20 02:17:49.3521900',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [23]  =======================
+
+
+=======================  INICIO Query [24]  =======================
+
+declare @p1 int
+
+set @p1=10
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [24]  =======================
+
+
+=======================  INICIO Query [25]  =======================
+
+declare @p1 int
+
+set @p1=10
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [25]  =======================
+
+
+=======================  INICIO Query [26]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [26]  =======================
+
+
+=======================  INICIO Query [27]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [27]  =======================
+
+
+=======================  INICIO Query [28]  =======================
+
+declare @p1 int
+
+set @p1=11
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 nvarchar(64)',N'SELECT TOP 21 [django_session].[session_key], [django_session].[session_data], [django_session].[expire_date] FROM [django_session] WHERE ([django_session].[expire_date] > @P1 AND [django_session].[session_key] = @P2)','2025-01-20 02:17:52.0125800',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [28]  =======================
+
+
+=======================  INICIO Query [29]  =======================
+
+declare @p1 int
+
+set @p1=11
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 nvarchar(64)',N'SELECT TOP 21 [django_session].[session_key], [django_session].[session_data], [django_session].[expire_date] FROM [django_session] WHERE ([django_session].[expire_date] > @P1 AND [django_session].[session_key] = @P2)','2025-01-20 02:17:52.0125800',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [29]  =======================
+
+
+=======================  INICIO Query [30]  =======================
+
+declare @p1 int
+
+set @p1=12
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [30]  =======================
+
+
+=======================  INICIO Query [31]  =======================
+
+declare @p1 int
+
+set @p1=12
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [31]  =======================
+
+
+=======================  INICIO Query [32]  =======================
+
+declare @p1 int
+
+set @p1=13
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 3 [Campanha].[id], [Campanha].[id_onibus_id], [Campanha].[titulo], [Campanha].[data_criacao], [Campanha].[criado_por_id], [Campanha].[prox_corrida], [Campanha].[ativo] FROM [Campanha] INNER JOIN [Administrador] ON ([Campanha].[id] = [Administrador].[id_campanha_id]) WHERE [Administrador].[id_usuario_id] = @P1 ORDER BY [Campanha].[data_criacao] DESC',1002
+
+select @p1
+
+=======================  FIM Query [32]  =======================
+
+
+=======================  INICIO Query [33]  =======================
+
+declare @p1 int
+
+set @p1=13
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 3 [Campanha].[id], [Campanha].[id_onibus_id], [Campanha].[titulo], [Campanha].[data_criacao], [Campanha].[criado_por_id], [Campanha].[prox_corrida], [Campanha].[ativo] FROM [Campanha] INNER JOIN [Administrador] ON ([Campanha].[id] = [Administrador].[id_campanha_id]) WHERE [Administrador].[id_usuario_id] = @P1 ORDER BY [Campanha].[data_criacao] DESC',1002
+
+select @p1
+
+=======================  FIM Query [33]  =======================
+
+
+=======================  INICIO Query [34]  =======================
+
+declare @p1 int
+
+set @p1=14
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 3 [Campanha].[id], [Campanha].[id_onibus_id], [Campanha].[titulo], [Campanha].[data_criacao], [Campanha].[criado_por_id], [Campanha].[prox_corrida], [Campanha].[ativo] FROM [Campanha] INNER JOIN [Passageiro] ON ([Campanha].[id] = [Passageiro].[id_campanha_id]) WHERE [Passageiro].[id_usuario_id] = @P1 ORDER BY [Campanha].[data_criacao] DESC',1002
+
+select @p1
+
+=======================  FIM Query [34]  =======================
+
+
+=======================  INICIO Query [35]  =======================
+
+declare @p1 int
+
+set @p1=14
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 3 [Campanha].[id], [Campanha].[id_onibus_id], [Campanha].[titulo], [Campanha].[data_criacao], [Campanha].[criado_por_id], [Campanha].[prox_corrida], [Campanha].[ativo] FROM [Campanha] INNER JOIN [Passageiro] ON ([Campanha].[id] = [Passageiro].[id_campanha_id]) WHERE [Passageiro].[id_usuario_id] = @P1 ORDER BY [Campanha].[data_criacao] DESC',1002
+
+select @p1
+
+=======================  FIM Query [35]  =======================
+
+
+=======================  INICIO Query [36]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [36]  =======================
+
+
+=======================  INICIO Query [37]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [37]  =======================
+
+
+=======================  INICIO Query [38]  =======================
+
+declare @p1 int
+
+set @p1=15
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 nvarchar(64)',N'SELECT TOP 21 [django_session].[session_key], [django_session].[session_data], [django_session].[expire_date] FROM [django_session] WHERE ([django_session].[expire_date] > @P1 AND [django_session].[session_key] = @P2)','2025-01-20 02:17:55.3474400',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [38]  =======================
+
+
+=======================  INICIO Query [39]  =======================
+
+declare @p1 int
+
+set @p1=15
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 nvarchar(64)',N'SELECT TOP 21 [django_session].[session_key], [django_session].[session_data], [django_session].[expire_date] FROM [django_session] WHERE ([django_session].[expire_date] > @P1 AND [django_session].[session_key] = @P2)','2025-01-20 02:17:55.3474400',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [39]  =======================
+
+
+=======================  INICIO Query [40]  =======================
+
+declare @p1 int
+
+set @p1=16
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [40]  =======================
+
+
+=======================  INICIO Query [41]  =======================
+
+declare @p1 int
+
+set @p1=16
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [41]  =======================
+
+
+=======================  INICIO Query [42]  =======================
+
+declare @p1 int
+
+set @p1=17
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT [Campanha].[id], [Campanha].[id_onibus_id], [Campanha].[titulo], [Campanha].[data_criacao], [Campanha].[criado_por_id], [Campanha].[prox_corrida], [Campanha].[ativo] FROM [Campanha] INNER JOIN [Administrador] ON ([Campanha].[id] = [Administrador].[id_campanha_id]) WHERE [Administrador].[id_usuario_id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [42]  =======================
+
+
+=======================  INICIO Query [43]  =======================
+
+declare @p1 int
+
+set @p1=17
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT [Campanha].[id], [Campanha].[id_onibus_id], [Campanha].[titulo], [Campanha].[data_criacao], [Campanha].[criado_por_id], [Campanha].[prox_corrida], [Campanha].[ativo] FROM [Campanha] INNER JOIN [Administrador] ON ([Campanha].[id] = [Administrador].[id_campanha_id]) WHERE [Administrador].[id_usuario_id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [43]  =======================
+
+
+=======================  INICIO Query [44]  =======================
+
+declare @p1 int
+
+set @p1=18
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT [Campanha].[id], [Campanha].[id_onibus_id], [Campanha].[titulo], [Campanha].[data_criacao], [Campanha].[criado_por_id], [Campanha].[prox_corrida], [Campanha].[ativo] FROM [Campanha] INNER JOIN [Passageiro] ON ([Campanha].[id] = [Passageiro].[id_campanha_id]) WHERE [Passageiro].[id_usuario_id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [44]  =======================
+
+
+=======================  INICIO Query [45]  =======================
+
+declare @p1 int
+
+set @p1=18
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT [Campanha].[id], [Campanha].[id_onibus_id], [Campanha].[titulo], [Campanha].[data_criacao], [Campanha].[criado_por_id], [Campanha].[prox_corrida], [Campanha].[ativo] FROM [Campanha] INNER JOIN [Passageiro] ON ([Campanha].[id] = [Passageiro].[id_campanha_id]) WHERE [Passageiro].[id_usuario_id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [45]  =======================
+
+
+=======================  INICIO Query [46]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [46]  =======================
+
+
+=======================  INICIO Query [47]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [47]  =======================
+
+
+=======================  INICIO Query [48]  =======================
+
+declare @p1 int
+
+set @p1=19
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 nvarchar(64)',N'SELECT TOP 21 [django_session].[session_key], [django_session].[session_data], [django_session].[expire_date] FROM [django_session] WHERE ([django_session].[expire_date] > @P1 AND [django_session].[session_key] = @P2)','2025-01-20 02:17:57.6382270',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [48]  =======================
+
+
+=======================  INICIO Query [49]  =======================
+
+declare @p1 int
+
+set @p1=19
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 nvarchar(64)',N'SELECT TOP 21 [django_session].[session_key], [django_session].[session_data], [django_session].[expire_date] FROM [django_session] WHERE ([django_session].[expire_date] > @P1 AND [django_session].[session_key] = @P2)','2025-01-20 02:17:57.6382270',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [49]  =======================
+
+
+=======================  INICIO Query [50]  =======================
+
+declare @p1 int
+
+set @p1=20
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [50]  =======================
+
+
+=======================  INICIO Query [51]  =======================
+
+declare @p1 int
+
+set @p1=20
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [51]  =======================
+
+
+=======================  INICIO Query [52]  =======================
+
+SELECT [Onibus].[id], [Onibus].[nome], [Onibus].[imagem], [Onibus].[placa], [Onibus].[marca], [Onibus].[modelo], [Onibus].[ultima_manutencao], [Onibus].[criado_por_id] FROM [Onibus]
+
+=======================  FIM Query [52]  =======================
+
+
+=======================  INICIO Query [53]  =======================
+
+SELECT [Onibus].[id], [Onibus].[nome], [Onibus].[imagem], [Onibus].[placa], [Onibus].[marca], [Onibus].[modelo], [Onibus].[ultima_manutencao], [Onibus].[criado_por_id] FROM [Onibus]
+
+=======================  FIM Query [53]  =======================
+
+
+=======================  INICIO Query [54]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [54]  =======================
+
+
+=======================  INICIO Query [55]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [55]  =======================
+
+
+=======================  INICIO Query [56]  =======================
+
+declare @p1 int
+
+set @p1=21
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 nvarchar(64)',N'SELECT TOP 21 [django_session].[session_key], [django_session].[session_data], [django_session].[expire_date] FROM [django_session] WHERE ([django_session].[expire_date] > @P1 AND [django_session].[session_key] = @P2)','2025-01-20 02:18:10.1176660',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [56]  =======================
+
+
+=======================  INICIO Query [57]  =======================
+
+declare @p1 int
+
+set @p1=21
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 nvarchar(64)',N'SELECT TOP 21 [django_session].[session_key], [django_session].[session_data], [django_session].[expire_date] FROM [django_session] WHERE ([django_session].[expire_date] > @P1 AND [django_session].[session_key] = @P2)','2025-01-20 02:18:10.1176660',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [57]  =======================
+
+
+=======================  INICIO Query [58]  =======================
+
+declare @p1 int
+
+set @p1=22
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [58]  =======================
+
+
+=======================  INICIO Query [59]  =======================
+
+declare @p1 int
+
+set @p1=22
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [59]  =======================
+
+
+=======================  INICIO Query [60]  =======================
+
+declare @p1 int
+
+set @p1=23
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Onibus].[id], [Onibus].[nome], [Onibus].[imagem], [Onibus].[placa], [Onibus].[marca], [Onibus].[modelo], [Onibus].[ultima_manutencao], [Onibus].[criado_por_id] FROM [Onibus] WHERE [Onibus].[id] = @P1',1
+
+select @p1
+
+=======================  FIM Query [60]  =======================
+
+
+=======================  INICIO Query [61]  =======================
+
+declare @p1 int
+
+set @p1=23
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Onibus].[id], [Onibus].[nome], [Onibus].[imagem], [Onibus].[placa], [Onibus].[marca], [Onibus].[modelo], [Onibus].[ultima_manutencao], [Onibus].[criado_por_id] FROM [Onibus] WHERE [Onibus].[id] = @P1',1
+
+select @p1
+
+=======================  FIM Query [61]  =======================
+
+
+=======================  INICIO Query [62]  =======================
+
+declare @p1 int
+
+set @p1=24
+
+exec sp_prepexec @p1 output,N'@P1 int,@P2 int',N'SELECT TOP 1 @P1 AS [a] FROM [Onibus] WHERE [Onibus].[id] = @P2',1,1
+
+select @p1
+
+=======================  FIM Query [62]  =======================
+
+
+=======================  INICIO Query [63]  =======================
+
+declare @p1 int
+
+set @p1=24
+
+exec sp_prepexec @p1 output,N'@P1 int,@P2 int',N'SELECT TOP 1 @P1 AS [a] FROM [Onibus] WHERE [Onibus].[id] = @P2',1,1
+
+select @p1
+
+=======================  FIM Query [63]  =======================
+
+
+=======================  INICIO Query [64]  =======================
+
+declare @p1 int
+
+set @p1=25
+
+exec sp_prepexec @p1 output,N'@P1 int,@P2 nvarchar(28),@P3 nvarchar(20),@P4 int,@P5 nvarchar(20),@P6 int',N'SET NOCOUNT ON INSERT INTO [Campanha] ([id_onibus_id], [titulo], [data_criacao], [criado_por_id], [prox_corrida], [ativo]) VALUES (@P1, @P2, @P3, @P4, @P5, @P6); SELECT CAST(SCOPE_IDENTITY() AS bigint)',1,N'Qualquer coisa',N'2025-01-19',1002,N'2026-05-12',1
+
+select @p1
+
+=======================  FIM Query [64]  =======================
+
+
+=======================  INICIO Query [65]  =======================
+
+declare @p1 int
+
+set @p1=25
+
+exec sp_prepexec @p1 output,N'@P1 int,@P2 nvarchar(28),@P3 nvarchar(20),@P4 int,@P5 nvarchar(20),@P6 int',N'SET NOCOUNT ON INSERT INTO [Campanha] ([id_onibus_id], [titulo], [data_criacao], [criado_por_id], [prox_corrida], [ativo]) VALUES (@P1, @P2, @P3, @P4, @P5, @P6); SELECT CAST(SCOPE_IDENTITY() AS bigint)',1,N'Qualquer coisa',N'2025-01-19',1002,N'2026-05-12',1
+
+select @p1
+
+=======================  FIM Query [65]  =======================
+
+
+=======================  INICIO Query [66]  =======================
+
+declare @p1 int
+
+set @p1=26
+
+exec sp_prepexec @p1 output,N'@P1 int,@P2 int,@P3 nvarchar(6)',N'SET NOCOUNT ON INSERT INTO [Administrador] ([id_usuario_id], [id_campanha_id], [role]) VALUES (@P1, @P2, @P3); SELECT CAST(SCOPE_IDENTITY() AS bigint)',1002,1002,N'ADM'
+
+select @p1
+
+=======================  FIM Query [66]  =======================
+
+
+=======================  INICIO Query [67]  =======================
+
+declare @p1 int
+
+set @p1=26
+
+exec sp_prepexec @p1 output,N'@P1 int,@P2 int,@P3 nvarchar(6)',N'SET NOCOUNT ON INSERT INTO [Administrador] ([id_usuario_id], [id_campanha_id], [role]) VALUES (@P1, @P2, @P3); SELECT CAST(SCOPE_IDENTITY() AS bigint)',1002,1002,N'ADM'
+
+select @p1
+
+=======================  FIM Query [67]  =======================
+
+
+=======================  INICIO Query [68]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [68]  =======================
+
+
+=======================  INICIO Query [69]  =======================
+
+SELECT @@TRANCOUNT
+
+=======================  FIM Query [69]  =======================
+
+
+=======================  INICIO Query [70]  =======================
+
+declare @p1 int
+
+set @p1=27
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 nvarchar(64)',N'SELECT TOP 21 [django_session].[session_key], [django_session].[session_data], [django_session].[expire_date] FROM [django_session] WHERE ([django_session].[expire_date] > @P1 AND [django_session].[session_key] = @P2)','2025-01-20 02:18:10.1321800',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [70]  =======================
+
+
+=======================  INICIO Query [71]  =======================
+
+declare @p1 int
+
+set @p1=27
+
+exec sp_prepexec @p1 output,N'@P1 datetime2,@P2 nvarchar(64)',N'SELECT TOP 21 [django_session].[session_key], [django_session].[session_data], [django_session].[expire_date] FROM [django_session] WHERE ([django_session].[expire_date] > @P1 AND [django_session].[session_key] = @P2)','2025-01-20 02:18:10.1321800',N'vb0r520h6ud39rsp06ri89wu9ge7609c'
+
+select @p1
+
+=======================  FIM Query [71]  =======================
+
+
+=======================  INICIO Query [72]  =======================
+
+declare @p1 int
+
+set @p1=28
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [72]  =======================
+
+
+=======================  INICIO Query [73]  =======================
+
+declare @p1 int
+
+set @p1=28
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Usuario].[password], [Usuario].[last_login], [Usuario].[is_superuser], [Usuario].[email], [Usuario].[is_staff], [Usuario].[is_active], [Usuario].[date_joined], [Usuario].[imagem], [Usuario].[id], [Usuario].[usuario], [Usuario].[nome], [Usuario].[telefone], [Usuario].[is_motorista], [Usuario].[endereco_id] FROM [Usuario] WHERE [Usuario].[id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [73]  =======================
+
+
+=======================  INICIO Query [74]  =======================
+
+declare @p1 int
+
+set @p1=29
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT [Campanha].[id], [Campanha].[id_onibus_id], [Campanha].[titulo], [Campanha].[data_criacao], [Campanha].[criado_por_id], [Campanha].[prox_corrida], [Campanha].[ativo] FROM [Campanha] INNER JOIN [Administrador] ON ([Campanha].[id] = [Administrador].[id_campanha_id]) WHERE [Administrador].[id_usuario_id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [74]  =======================
+
+
+=======================  INICIO Query [75]  =======================
+
+declare @p1 int
+
+set @p1=29
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT [Campanha].[id], [Campanha].[id_onibus_id], [Campanha].[titulo], [Campanha].[data_criacao], [Campanha].[criado_por_id], [Campanha].[prox_corrida], [Campanha].[ativo] FROM [Campanha] INNER JOIN [Administrador] ON ([Campanha].[id] = [Administrador].[id_campanha_id]) WHERE [Administrador].[id_usuario_id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [75]  =======================
+
+
+=======================  INICIO Query [76]  =======================
+
+declare @p1 int
+
+set @p1=30
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Onibus].[id], [Onibus].[nome], [Onibus].[imagem], [Onibus].[placa], [Onibus].[marca], [Onibus].[modelo], [Onibus].[ultima_manutencao], [Onibus].[criado_por_id] FROM [Onibus] WHERE [Onibus].[id] = @P1',1
+
+select @p1
+
+=======================  FIM Query [76]  =======================
+
+
+=======================  INICIO Query [77]  =======================
+
+declare @p1 int
+
+set @p1=30
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT TOP 21 [Onibus].[id], [Onibus].[nome], [Onibus].[imagem], [Onibus].[placa], [Onibus].[marca], [Onibus].[modelo], [Onibus].[ultima_manutencao], [Onibus].[criado_por_id] FROM [Onibus] WHERE [Onibus].[id] = @P1',1
+
+select @p1
+
+=======================  FIM Query [77]  =======================
+
+
+=======================  INICIO Query [78]  =======================
+
+declare @p1 int
+
+set @p1=31
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT [Administrador].[id_administrador], [Administrador].[id_usuario_id], [Administrador].[id_campanha_id], [Administrador].[role] FROM [Administrador] WHERE [Administrador].[id_campanha_id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [78]  =======================
+
+
+=======================  INICIO Query [79]  =======================
+
+declare @p1 int
+
+set @p1=31
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT [Administrador].[id_administrador], [Administrador].[id_usuario_id], [Administrador].[id_campanha_id], [Administrador].[role] FROM [Administrador] WHERE [Administrador].[id_campanha_id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [79]  =======================
+
+
+=======================  INICIO Query [80]  =======================
+
+declare @p1 int
+
+set @p1=32
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT [Campanha].[id], [Campanha].[id_onibus_id], [Campanha].[titulo], [Campanha].[data_criacao], [Campanha].[criado_por_id], [Campanha].[prox_corrida], [Campanha].[ativo] FROM [Campanha] INNER JOIN [Passageiro] ON ([Campanha].[id] = [Passageiro].[id_campanha_id]) WHERE [Passageiro].[id_usuario_id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [80]  =======================
+
+
+=======================  INICIO Query [81]  =======================
+
+declare @p1 int
+
+set @p1=32
+
+exec sp_prepexec @p1 output,N'@P1 int',N'SELECT [Campanha].[id], [Campanha].[id_onibus_id], [Campanha].[titulo], [Campanha].[data_criacao], [Campanha].[criado_por_id], [Campanha].[prox_corrida], [Campanha].[ativo] FROM [Campanha] INNER JOIN [Passageiro] ON ([Campanha].[id] = [Passageiro].[id_campanha_id]) WHERE [Passageiro].[id_usuario_id] = @P1',1002
+
+select @p1
+
+=======================  FIM Query [81]  =======================
+

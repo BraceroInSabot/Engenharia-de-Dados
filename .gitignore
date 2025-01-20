@@ -1,0 +1,13 @@
+.venv/
+.vscode/
+__pycache__/
+migrations/
+*/venv/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.bak
+*.tmp
+Thumbs.db
