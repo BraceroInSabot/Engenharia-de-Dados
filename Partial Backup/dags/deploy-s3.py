@@ -1,10 +1,11 @@
-from airflow import DAG
-from airflow.operators.python_operator import PythonOperator
-from datetime import datetime
-from airflow.hooks.S3_hook import S3Hook
-from time import sleep
 import os
 import typing as tp
+
+from airflow.operators.python_operator import PythonOperator
+from airflow.hooks.S3_hook import S3Hook
+from datetime import datetime
+from airflow import DAG
+
 
 def files() -> tp.List[str]:
     """Retorna o nome dos arquivos gerados pela query de extração/backup parcial.
@@ -13,6 +14,7 @@ def files() -> tp.List[str]:
         os.listdir: Lista com os nomes dos arquivos gerados.
     """
     return os.listdir('/temp')
+
 
 def deploy(bucket_name: str, ti: object) -> None:
     files: tp.List[str] = ti.xcom_pull(task_ids='read_files_name')
