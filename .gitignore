@@ -11,3 +11,5 @@ migrations/
 *.bak
 *.tmp
 Thumbs.db
+*/logs/*
+*/.env
